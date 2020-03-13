@@ -54,5 +54,21 @@
             android:id="@+id/nav13"
             android:icon="@drawable/baseline_data_usage_white_24"
             android:title="@string/nav_item13" />
+        <item
+            android:id="@+id/nav14"
+            android:icon="@drawable/baseline_mail_white_24"
+            android:title="@string/nav_item14" />
+        <item
+            android:id="@+id/nav15"
+            android:icon="@drawable/baseline_bookmark_white_24"
+            android:title="@string/nav_item15" />
+        <item
+            android:id="@+id/nav16"
+            android:icon="@drawable/baseline_sync_white_24"
+            android:title="@string/nav_item16" />
+        <item
+            android:enabled="false"
+            android:id="@+id/nav17"
+            android:title="" />
     </group>
 </menu>

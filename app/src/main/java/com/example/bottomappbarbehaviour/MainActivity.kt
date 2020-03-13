@@ -59,6 +59,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         fab.setOnClickListener {
+            /*Snackbar.make(fab, "Here we go... ", Snackbar.LENGTH_LONG)
+                    *//*.setAction(R.string.snackbar_action_undo, showListener)*//*
+                    .show();*/
+            //fab.snackBar("Here we go")
             displayMaterialSnackBar()
         }
 
@@ -72,15 +76,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun displayMaterialSnackBar() {
-        val marginSide = 0
-        val marginBottom = 550
-        val snackbar = Snackbar.make(
+        val marginSide = 30
+        val marginBottom = 60
+        val snackbar = Snackbar.make(coordinatorLayout2, "Here we go... ", Snackbar.LENGTH_LONG)
+        //.show()
+
+        /*val snackbar = Snackbar.make(
                 coordinatorLayout2,
                 "FAB Clicked",
                 Snackbar.LENGTH_LONG
         ).setAction("UNDO") {  }
         // Changing message text color
-        snackbar.setActionTextColor(ContextCompat.getColor(this, R.color.colorSnackbarButton))
+        snackbar.setActionTextColor(ContextCompat.getColor(this, R.color.colorSnackbarButton))*/
 
         val snackbarView = snackbar.view
         val params = snackbarView.layoutParams as CoordinatorLayout.LayoutParams
